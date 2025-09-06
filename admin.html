@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>管理員後台 - 花卉商城</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>花卉商城管理員後台</h1>
+    <nav>
+        <a href="shop.html">購物頁</a>
+        <a href="cart.html">購物車</a>
+        <a href="login.html" onclick="logoutAdmin()">登出</a>
+    </nav>
+</header>
+
+<main>
+<section class="admin-login" id="adminLoginSection">
+    <h2>管理員登入</h2>
+    <form id="adminLoginForm">
+        <label for="adminUsername">帳號:</label>
+        <input type="text" id="adminUsername" required>
+        <label for="adminPassword">密碼:</label>
+        <input type="password" id="adminPassword" required>
+        <button type="submit">登入</button>
+    </form>
+    <p id="adminLoginMessage" style="color:red;"></p>
+</section>
+
+<section class="admin-panel" id="adminPanel" style="display:none;">
+    <h2>會員管理</h2>
+    <div id="userList"></div>
+    <h3>新增會員</h3>
+    <form id="addUserForm">
+        <input type="text" id="newUsername" placeholder="帳號" required>
+        <input type="password" id="newPassword" placeholder="密碼" required>
+        <button type="submit">新增</button>
+    </form>
+</section>
+</main>
+
+<footer>
+    <p>&copy; 2025 花卉商城. All rights reserved.</p>
+</footer>
+
+<script src="admin.js"></script>
+</body>
+</html>

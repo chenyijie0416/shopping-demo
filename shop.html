@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>購物 - 花卉商城</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>花卉商城 🌸</h1>
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="login.html">登入</a>
+        <a href="cart.html">購物車</a>
+    </nav>
+</header>
+
+<main>
+    <h2 style="text-align:center; margin-top:30px;">客製化花束</h2>
+    <section class="flower-editor">
+        <label>花朵種類:</label>
+        <select id="flowerType">
+            <option value="玫瑰">玫瑰</option>
+            <option value="百合">百合</option>
+            <option value="鬱金香">鬱金香</option>
+        </select>
+
+        <label>花朵顏色:</label>
+        <select id="flowerColor">
+            <option value="紅">紅色</option>
+            <option value="白">白色</option>
+            <option value="粉">粉色</option>
+        </select>
+
+        <label>包裝樣式:</label>
+        <select id="flowerWrap">
+            <option value="紙袋">紙袋</option>
+            <option value="禮盒">禮盒</option>
+            <option value="絲帶">絲帶</option>
+        </select>
+
+        <p>預覽:</p>
+        <div id="preview" class="preview">
+            <img id="previewImg" src="" alt="花束預覽" width="250">
+            <p id="previewText"></p>
+        </div>
+        <p>價格: NT$<span id="price">500</span></p>
+        <button onclick="addCustomFlower()">加入購物車</button>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 花卉商城. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
